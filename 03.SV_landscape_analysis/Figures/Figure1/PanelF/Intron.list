@@ -1,0 +1,6 @@
+intron_variant
+intragenic_variant
+splice_acceptor_variant&intron_variant
+splice_donor_variant&intron_variant
+splice_region_variant&intron_variant
+splice_acceptor_variant&splice_donor_variant&intron_variant
