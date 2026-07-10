@@ -1,0 +1,19 @@
+{
+  "session_id": "20260705_224806_14b89047",
+  "created_at": "2026-07-05T22:54:41.686622",
+  "original_sequence": "DTASDAAAAAALTAANAAAAAKLTADNAAAAAAATAR",
+  "final_sequence": "",
+  "design_target": "请设计一个抗冻蛋白。\n\n输入序列: DTASDAAAAAALTAANAAAAAKLTADNAAAAAAATAR\n序列长度: 37 aa\n设计目标: improve TH activity\n应用场景: general\n\n请严格按照AFP设计工作流程:\n1. 首先调用afp_knowledge_query分析序列\n2. 然后调用afp_design_strategy获取策略\n3. 接着开始突变→评估→",
+  "application_scenario": "general",
+  "total_rounds": 0,
+  "baseline": {
+    "th": 0.16,
+    "iri": 1.82,
+    "expression": 0.452,
+    "stability": 0.606
+  },
+  "final_performance": {},
+  "rounds_summary": [],
+  "best_round": null,
+  "performance_trend": []
+}

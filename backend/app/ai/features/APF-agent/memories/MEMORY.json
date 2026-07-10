@@ -1,0 +1,6 @@
+{
+  "entries": [
+    "AFP设计任务存在约15轮工具调用硬上限。必须按以下节奏分配：(1) 分析阶段最多2轮（knowledge_query + design_strategy），(2) 每轮设计合并 mutation + evaluate + simulate 为并行调用（1轮3调用），(3) 最多做2轮突变，(4) 最后一轮留给 afp_design_summary。首轮突变必须对准场景最高权重目标（如cell_cryopreservation→TH优先，不要从表达量开始）。保守的溶解度优化应放在TH达标之后。"
+  ],
+  "char_limit": 2200
+}

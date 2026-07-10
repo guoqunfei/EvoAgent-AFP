@@ -1,6 +1,0 @@
-intergenic_region
-upstream_gene_variant
-downstream_gene_variant
-splice_region_variant&downstream_gene_variant
-splice_region_variant&upstream_gene_variant
-splice_acceptor_variant&3_prime_UTR_truncation&exon_loss_variant&splice_region_variant&downstream_gene_variant&intron_variant

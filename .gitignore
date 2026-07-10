@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+.env.local
+
+# Data files (uncomment if needed)
+# data/
+# *.csv
+# *.xlsx
+
+# Model files (uncomment if needed)
+# models/
+# *.h5
+# *.pkl
+
+# Exclude other project directories
+01.Variant-calling/
+02.Variant-merge/
+03.SV_landscape_analysis/

@@ -1,0 +1,24 @@
+{
+  "skills": [
+    {
+      "name": "test_skill",
+      "description": "test desc",
+      "category": "motif_mutation",
+      "trigger_condition": "trigger",
+      "rules": [
+        "rule1"
+      ],
+      "examples": [
+        {
+          "note": "ok"
+        }
+      ],
+      "counter_examples": [],
+      "confidence": 0.55,
+      "evidence_count": 5,
+      "created_at": 1781187363.880598,
+      "updated_at": 1781187363.880598,
+      "version": 1
+    }
+  ]
+}

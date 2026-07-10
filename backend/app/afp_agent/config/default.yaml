@@ -1,0 +1,55 @@
+# AFPAgent Configuration
+# 抗冻蛋白智能设计代理配置
+
+agent:
+  name: "AFPAgent"
+  version: "1.0.0"
+  description: "Antifreeze Protein Intelligent Design Agent"
+
+design:
+  targets:
+    - increase_TH
+    - increase_IRI
+    - improve_stability
+    - enhance_expression
+  application_scenarios:
+    - ice_cream
+    - frozen_dough
+    - meat_preservation
+    - cell_cryopreservation
+    - organ_preservation
+    - transgenic_crop
+    - anti_ice_coating
+    - general
+
+metrics:
+  primary:
+    - th_activity_celsius
+    - iri_activity_um
+    - geometry_score
+  secondary:
+    - expression_yield
+    - thermal_stability
+    - solubility
+
+simulation:
+  ice_planes:
+    - basal
+    - prism
+    - pyramidal_201
+    - pyramidal_110
+  scoring_weights:
+    spacing_match: 0.40
+    residue_quality: 0.35
+    flatness: 0.25
+
+memory:
+  forbidden_threshold: -0.3
+  success_threshold: 0.3
+  max_context_items: 8
+
+skills:
+  auto_generate: true
+  min_experiments: 3
+  min_confidence: 0.3
+  max_confidence: 0.95

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="ice" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Snowflake shape -->
+  <g stroke="url(#ice)" stroke-width="2.2" fill="none" stroke-linecap="round" filter="url(#glow)">
+    <!-- 6 arms of snowflake -->
+    <line x1="32" y1="4" x2="32" y2="60"/>
+    <line x1="8" y1="18" x2="56" y2="46" transform="rotate(30,32,32)"/>
+    <line x1="8" y1="46" x2="56" y2="18" transform="rotate(-30,32,32)"/>
+    <!-- Branch details -->
+    <line x1="32" y1="12" x2="26" y2="22"/><line x1="32" y1="12" x2="38" y2="22"/>
+    <line x1="32" y1="52" x2="26" y2="42"/><line x1="32" y1="52" x2="38" y2="42"/>
+    <line x1="12" y1="22" x2="18" y2="26"/>
+    <line x1="46" y1="38" x2="52" y2="42"/>
+  </g>
+  <!-- Center dot -->
+  <circle cx="32" cy="32" r="4" fill="url(#ice)"/>
+</svg>

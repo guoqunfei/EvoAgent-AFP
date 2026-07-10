@@ -1,0 +1,19 @@
+{
+  "session_id": "20260705_151248_e72aeb9c",
+  "created_at": "2026-07-05T15:20:05.430021",
+  "original_sequence": "DTASDAAAAAALTAANAKAAAELTAANAAAAAAATAR",
+  "final_sequence": "",
+  "design_target": "序列: DTASDAAAAAALTAANAKAAAELTAANAAAAAAATAR",
+  "application_scenario": "cell_cryopreservation",
+  "total_rounds": 0,
+  "baseline": {
+    "th": 0.16,
+    "iri": 1.82,
+    "expression": 0.452,
+    "stability": 0.606
+  },
+  "final_performance": {},
+  "rounds_summary": [],
+  "best_round": null,
+  "performance_trend": []
+}

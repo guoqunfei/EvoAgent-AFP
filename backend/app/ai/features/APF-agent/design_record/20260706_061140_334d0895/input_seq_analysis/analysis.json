@@ -1,0 +1,1067 @@
+{
+  "session_id": "20260706_061140_334d0895",
+  "timestamp": "2026-07-06T06:11:45.625717",
+  "input_sequence": "DTASDAAAAAALTAANAAAAAKLTADNAAAAAAATAR",
+  "sequence_length": 37,
+  "afp_type": "Type I (α-helical, fish)",
+  "type_confidence": 1.0,
+  "type_scores": {
+    "Type I (α-helical, fish)": 1.0,
+    "Type III (β-sandwich, fish)": 0.2,
+    "Insect hyperactive (β-helical)": 0.25,
+    "Bacterial IBP": 0.2,
+    "De novo designed": 0.8999999999999999,
+    "AFGP": 0.0,
+    "Plant AFP": 0.8
+  },
+  "predicted_ibs": {
+    "positions": [
+      2,
+      13,
+      24,
+      35
+    ],
+    "residues": [
+      "T2",
+      "T13",
+      "T24",
+      "T35"
+    ],
+    "target_ice_plane": "Pyramidal plane {20-21}"
+  },
+  "physicochemical": {
+    "thr_content": 0.108,
+    "ala_content": 0.622,
+    "cys_content": 0.0,
+    "net_charge": -1,
+    "gravy": 0.527,
+    "isoelectric_point": 4.2,
+    "instability_index": 39.44
+  },
+  "forbidden_positions": [
+    1,
+    2,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    18,
+    23,
+    24,
+    34,
+    35
+  ],
+  "mutation_hotspots": [
+    {
+      "position": 3,
+      "current_aa": "A",
+      "mutation_potential": 0.7,
+      "suggestion": "Ala→Ser可提高溶解度",
+      "is_surface": true
+    },
+    {
+      "position": 6,
+      "current_aa": "A",
+      "mutation_potential": 0.7,
+      "suggestion": "Ala→Ser可提高溶解度",
+      "is_surface": true
+    },
+    {
+      "position": 7,
+      "current_aa": "A",
+      "mutation_potential": 0.7,
+      "suggestion": "Ala→Ser可提高溶解度",
+      "is_surface": true
+    },
+    {
+      "position": 8,
+      "current_aa": "A",
+      "mutation_potential": 0.7,
+      "suggestion": "Ala→Ser可提高溶解度",
+      "is_surface": true
+    },
+    {
+      "position": 9,
+      "current_aa": "A",
+      "mutation_potential": 0.7,
+      "suggestion": "Ala→Ser可提高溶解度",
+      "is_surface": true
+    },
+    {
+      "position": 10,
+      "current_aa": "A",
+      "mutation_potential": 0.7,
+      "suggestion": "Ala→Ser可提高溶解度",
+      "is_surface": true
+    },
+    {
+      "position": 11,
+      "current_aa": "A",
+      "mutation_potential": 0.7,
+      "suggestion": "Ala→Ser可提高溶解度",
+      "is_surface": true
+    },
+    {
+      "position": 14,
+      "current_aa": "A",
+      "mutation_potential": 0.7,
+      "suggestion": "Ala→Ser可提高溶解度",
+      "is_surface": true
+    },
+    {
+      "position": 15,
+      "current_aa": "A",
+      "mutation_potential": 0.7,
+      "suggestion": "Ala→Ser可提高溶解度",
+      "is_surface": true
+    },
+    {
+      "position": 17,
+      "current_aa": "A",
+      "mutation_potential": 0.7,
+      "suggestion": "Ala→Ser可提高溶解度",
+      "is_surface": true
+    }
+  ],
+  "design_potential_score": 0.889,
+  "activity_prediction": {
+    "estimated_th_C": 0.16,
+    "estimated_iri_IC50_uM": 1.82,
+    "expression_score": 0.452,
+    "stability_score": 0.606
+  },
+  "relevant_principles": [
+    {
+      "title": "IBS Thr间距必须匹配靶向冰面",
+      "rule": "Thr残基在IBS上的间距必须为4.5Å（棱面）、7.4Å（基面）或16.5Å（金字塔面），偏差>10%将显著降低活性",
+      "evidence": "Strong (experimental)"
+    },
+    {
+      "title": "IBS必须保持平坦（RMSD < 1 Å）",
+      "rule": "冰结合面的Cα原子波动不应超过1Å。引入大体积残基(Phe/Trp/Tyr)或带电残基(Lys/Arg/Asp/Glu)到IBS将破坏平面性并丧失活性",
+      "evidence": "Strong (experimental)"
+    },
+    {
+      "title": "几何互补性可独立驱动显著的IRI活性",
+      "rule": "即使没有完美的氢键匹配，仅凭IBS与冰面的几何形状互补就足以产生可测量的IRI活性。这对de novo设计尤其重要",
+      "evidence": "Moderate (MD + experiment)"
+    },
+    {
+      "title": "融合标签可显著改善AFP表达量",
+      "rule": "MBP和GST标签可将AFP表达量提高2-10倍。TAT细胞穿透肽融合可实现细胞内冰保护。标签必须放置在非IBS端以避免干扰冰结合",
+      "evidence": "Strong (experimental)"
+    },
+    {
+      "title": "IBS残基类型影响冰结合强度",
+      "rule": "冰结合残基优先级：Glu(E) > Thr(T) > Asn(N) > Gln(Q) > Ser(S) > Ala(A) > Gly(G)。带电残基(D/K/R)应严格避免在IBS上出现",
+      "evidence": "Moderate (multiple experimental studies)"
+    },
+    {
+      "title": "盐桥对α-螺旋型AFP的折叠至关重要",
+      "rule": "Type I AFP中的Lys-Asp/Glu盐桥提供了α-螺旋的帽化稳定。突变这些盐桥残基将降低Tm并间接损害TH活性",
+      "evidence": "Strong (experimental)"
+    },
+    {
+      "title": "非IBS面残基对活性影响极小",
+      "rule": "de novo iTHR实验证明——非IBS面的Ala→Glu敲除仅降低IRI约3倍而非完全丧失。非IBS面可用于优化表达量/溶解度/稳定性而不影响冰结合",
+      "evidence": "Moderate (MD + experiment, 2025)"
+    },
+    {
+      "title": "Ala含量与α-螺旋AFP表达正相关",
+      "rule": "Type I AFP中Ala含量>50%有助于α-螺旋稳定性和表达产量。在保持IBS Thr的前提下，可适度增加Ala含量以改善表达",
+      "evidence": "Moderate (sequence analysis)"
+    }
+  ],
+  "relevant_mutations": [
+    {
+      "protein": "MaIBP_RIV (Marinomonas)",
+      "mutation": "G63S",
+      "th_change": "+40.0%",
+      "iri_change": "+15.0%",
+      "mechanism": "Ser羟基恢复局部H-bond网络，增强冰结合"
+    },
+    {
+      "protein": "MaIBP_RIV (Marinomonas)",
+      "mutation": "G63D",
+      "th_change": "-100.0%",
+      "iri_change": "-100.0%",
+      "mechanism": "Asp负电荷排斥冰面，完全丧失冰结合"
+    },
+    {
+      "protein": "MaIBP_RIV (Marinomonas)",
+      "mutation": "G63E",
+      "th_change": "-95.0%",
+      "iri_change": "-90.0%",
+      "mechanism": "Glu负电荷排斥冰面"
+    },
+    {
+      "protein": "MaIBP_RIV (Marinomonas)",
+      "mutation": "G63K",
+      "th_change": "-90.0%",
+      "iri_change": "-85.0%",
+      "mechanism": "Lys正电荷+大体积破坏IBS"
+    },
+    {
+      "protein": "雪蚤 AFP (sfAFP)",
+      "mutation": "T16G/A19G/S22G",
+      "th_change": "+128.0%",
+      "iri_change": "+20.0%",
+      "mechanism": "三重Gly突变优化二聚化冰结合面"
+    },
+    {
+      "protein": "Type III QAE",
+      "mutation": "Q44T/N14S/T18N",
+      "th_change": "-100.0%",
+      "iri_change": "-100.0%",
+      "mechanism": "三重突变破坏冰结合面氢键网络——即使保持天然折叠"
+    },
+    {
+      "protein": "Type III QAE",
+      "mutation": "A16L",
+      "th_change": "-30.0%",
+      "iri_change": "-25.0%",
+      "mechanism": "Leu大体积侧链破坏IBS平坦性"
+    },
+    {
+      "protein": "Type I HPLC6",
+      "mutation": "T2S",
+      "th_change": "-80.0%",
+      "iri_change": "-10.0%",
+      "mechanism": "Ser羟基间距不匹配(4.5→4.0Å)，破坏冰晶格匹配"
+    }
+  ],
+  "top_motifs": [
+    {
+      "motif_id": "IBS-TYPE1-HPLC6",
+      "name": "Type I HPLC6 11-mer Thr-Ala repeat motif",
+      "afp_type": "Type I (α-helical, fish)",
+      "source_organism": "Pseudopleuronectes americanus (winter flounder)",
+      "match_score": 8,
+      "ibs_residues": [
+        "T2",
+        "T13",
+        "T24",
+        "T35"
+      ],
+      "ibs_positions": [
+        2,
+        13,
+        24,
+        35
+      ],
+      "target_ice_plane": "Pyramidal plane {20-21}",
+      "th_activity": 0.5,
+      "iri_activity": 4.6,
+      "hyperactivity": false,
+      "forbidden_mutations": [
+        "T2*",
+        "T13*",
+        "T24*",
+        "T35*"
+      ],
+      "design_rules": [
+        "保持 Thr@2,13,24,35 —— 精确匹配冰{20-21}面氧原子间距",
+        "Ala含量保持>50%以确保α-螺旋稳定性",
+        "非IBS面: Ala→Ser 可提高溶解度而不影响活性",
+        "Lys18-Asp22盐桥应保留以保证折叠稳定性",
+        "避免在IBS面引入大体积疏水残基（破坏平面性）"
+      ],
+      "pdb_id": "1WFA"
+    },
+    {
+      "motif_id": "IBS-TYPE1-HPLC8",
+      "name": "Type I HPLC8 high-activity variant",
+      "afp_type": "Type I (α-helical, fish)",
+      "source_organism": "Pseudopleuronectes americanus (winter flounder)",
+      "match_score": 8,
+      "ibs_residues": [
+        "T2",
+        "T13",
+        "T24",
+        "T35"
+      ],
+      "ibs_positions": [
+        2,
+        13,
+        24,
+        35
+      ],
+      "target_ice_plane": "Pyramidal plane {20-21}",
+      "th_activity": 0.7,
+      "iri_activity": 4.2,
+      "hyperactivity": false,
+      "forbidden_mutations": [
+        "T2*",
+        "T13*",
+        "T24*",
+        "T35*"
+      ],
+      "design_rules": [
+        "与HPLC6相同的Thr间距要求",
+        "HPLC8通过非IBS区域的微小差异获得更高活性"
+      ],
+      "pdb_id": "1WFB"
+    },
+    {
+      "motif_id": "IBS-INSECT-TmAFP",
+      "name": "Tenebrio molitor β-helical Thr-X-Thr array motif",
+      "afp_type": "Insect hyperactive (β-helical)",
+      "source_organism": "Tenebrio molitor (yellow mealworm beetle)",
+      "match_score": 5,
+      "ibs_residues": [
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T"
+      ],
+      "ibs_positions": [
+        5,
+        12,
+        19,
+        26,
+        33,
+        40,
+        47,
+        54,
+        61,
+        68,
+        75,
+        82,
+        89,
+        96,
+        103,
+        110,
+        117,
+        124,
+        131,
+        138,
+        145,
+        152,
+        159,
+        166,
+        173,
+        180,
+        187,
+        194,
+        201,
+        208,
+        215,
+        222,
+        229,
+        236,
+        243,
+        250,
+        257
+      ],
+      "target_ice_plane": "Basal plane {0001}",
+      "th_activity": 5.5,
+      "iri_activity": 0.5,
+      "hyperactivity": true,
+      "forbidden_mutations": [
+        "T5*",
+        "T7*",
+        "T9*",
+        "T11*",
+        "C6*",
+        "C8*",
+        "C10*",
+        "C12*"
+      ],
+      "design_rules": [
+        "IBS面所有Thr均不可突变——间距7.4Å精确匹配基面",
+        "Cys残基形成二硫键刚性化β-螺旋支架",
+        "非IBS面可耐受插入以进行功能化",
+        "超活性需要≥4个完整β-螺旋圈(≥48个Thr在IBS面)",
+        "较短构建体(≤3圈)丧失超活性但可能保留中等TH"
+      ],
+      "pdb_id": "1EZG"
+    },
+    {
+      "motif_id": "IBS-INSECT-sbwAFP",
+      "name": "Spruce budworm β-helical (left-handed) AFP motif",
+      "afp_type": "Insect hyperactive (β-helical)",
+      "source_organism": "Choristoneura fumiferana (spruce budworm)",
+      "match_score": 5,
+      "ibs_residues": [
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T",
+        "T"
+      ],
+      "ibs_positions": [
+        1,
+        8,
+        15,
+        22,
+        29,
+        36,
+        43,
+        50,
+        57,
+        64,
+        71,
+        78,
+        85,
+        92,
+        99
+      ],
+      "target_ice_plane": "Basal plane {0001}",
+      "th_activity": 4.5,
+      "iri_activity": 1.0,
+      "hyperactivity": true,
+      "forbidden_mutations": [
+        "IBS面Thr*",
+        "二硫键Cys*"
+      ],
+      "design_rules": [
+        "左旋β-螺旋的TXT基序间距7.4Å",
+        "二硫键对结构完整性至关重要"
+      ],
+      "pdb_id": "1M8N"
+    },
+    {
+      "motif_id": "IBS-TYPE2-Ca",
+      "name": "Type II Ca²⁺-dependent ice-binding motif",
+      "afp_type": "Type II (C-type lectin, fish)",
+      "source_organism": "Clupea harengus (herring)",
+      "match_score": 3,
+      "ibs_residues": [
+        "D94",
+        "T96",
+        "T97",
+        "L98",
+        "T99",
+        "E100"
+      ],
+      "ibs_positions": [
+        94,
+        96,
+        97,
+        98,
+        99,
+        100
+      ],
+      "target_ice_plane": "Prism plane {10-10}",
+      "th_activity": 0.5,
+      "iri_activity": 5.0,
+      "hyperactivity": false,
+      "forbidden_mutations": [
+        "T96*",
+        "T98*",
+        "C* (5对二硫键)"
+      ],
+      "design_rules": [
+        "T96, T98 不可突变（丧失活性）",
+        "Ca²⁺配位残基(Q92, D94, E99, N113, D114)必须保留",
+        "5对二硫键(Cys模式)不可破坏",
+        "非IBS环区可插入表位或功能标签"
+      ],
+      "pdb_id": "2AFP"
+    }
+  ],
+  "full_result": {
+    "success": true,
+    "sequence": "DTASDAAAAAALTAANAAAAAKLTADNAAAAAAATAR",
+    "length": 37,
+    "query_intent": "full_analysis",
+    "application_scenario": "general",
+    "scenario_weights": null,
+    "position_guide": "  1:D 2:T 3:A 4:S 5:D 6:A 7:A 8:A 9:A 10:A\n  11:A 12:L 13:T 14:A 15:A 16:N 17:A 18:A 19:A 20:A\n  21:A 22:K 23:L 24:T 25:A 26:D 27:N 28:A 29:A 30:A\n  31:A 32:A 33:A 34:A 35:T 36:A 37:R",
+    "afp_type_prediction": "Type I (α-helical, fish)",
+    "type_confidence": 1.0,
+    "type_scores": {
+      "Type I (α-helical, fish)": 1.0,
+      "Type III (β-sandwich, fish)": 0.2,
+      "Insect hyperactive (β-helical)": 0.25,
+      "Bacterial IBP": 0.2,
+      "De novo designed": 0.8999999999999999,
+      "AFGP": 0.0,
+      "Plant AFP": 0.8
+    },
+    "top_motif_matches": [
+      {
+        "motif_id": "IBS-TYPE1-HPLC6",
+        "name": "Type I HPLC6 11-mer Thr-Ala repeat motif",
+        "afp_type": "Type I (α-helical, fish)",
+        "source_organism": "Pseudopleuronectes americanus (winter flounder)",
+        "match_score": 8,
+        "ibs_residues": [
+          "T2",
+          "T13",
+          "T24",
+          "T35"
+        ],
+        "ibs_positions": [
+          2,
+          13,
+          24,
+          35
+        ],
+        "target_ice_plane": "Pyramidal plane {20-21}",
+        "th_activity": 0.5,
+        "iri_activity": 4.6,
+        "hyperactivity": false,
+        "forbidden_mutations": [
+          "T2*",
+          "T13*",
+          "T24*",
+          "T35*"
+        ],
+        "design_rules": [
+          "保持 Thr@2,13,24,35 —— 精确匹配冰{20-21}面氧原子间距",
+          "Ala含量保持>50%以确保α-螺旋稳定性",
+          "非IBS面: Ala→Ser 可提高溶解度而不影响活性",
+          "Lys18-Asp22盐桥应保留以保证折叠稳定性",
+          "避免在IBS面引入大体积疏水残基（破坏平面性）"
+        ],
+        "pdb_id": "1WFA"
+      },
+      {
+        "motif_id": "IBS-TYPE1-HPLC8",
+        "name": "Type I HPLC8 high-activity variant",
+        "afp_type": "Type I (α-helical, fish)",
+        "source_organism": "Pseudopleuronectes americanus (winter flounder)",
+        "match_score": 8,
+        "ibs_residues": [
+          "T2",
+          "T13",
+          "T24",
+          "T35"
+        ],
+        "ibs_positions": [
+          2,
+          13,
+          24,
+          35
+        ],
+        "target_ice_plane": "Pyramidal plane {20-21}",
+        "th_activity": 0.7,
+        "iri_activity": 4.2,
+        "hyperactivity": false,
+        "forbidden_mutations": [
+          "T2*",
+          "T13*",
+          "T24*",
+          "T35*"
+        ],
+        "design_rules": [
+          "与HPLC6相同的Thr间距要求",
+          "HPLC8通过非IBS区域的微小差异获得更高活性"
+        ],
+        "pdb_id": "1WFB"
+      },
+      {
+        "motif_id": "IBS-INSECT-TmAFP",
+        "name": "Tenebrio molitor β-helical Thr-X-Thr array motif",
+        "afp_type": "Insect hyperactive (β-helical)",
+        "source_organism": "Tenebrio molitor (yellow mealworm beetle)",
+        "match_score": 5,
+        "ibs_residues": [
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T"
+        ],
+        "ibs_positions": [
+          5,
+          12,
+          19,
+          26,
+          33,
+          40,
+          47,
+          54,
+          61,
+          68,
+          75,
+          82,
+          89,
+          96,
+          103,
+          110,
+          117,
+          124,
+          131,
+          138,
+          145,
+          152,
+          159,
+          166,
+          173,
+          180,
+          187,
+          194,
+          201,
+          208,
+          215,
+          222,
+          229,
+          236,
+          243,
+          250,
+          257
+        ],
+        "target_ice_plane": "Basal plane {0001}",
+        "th_activity": 5.5,
+        "iri_activity": 0.5,
+        "hyperactivity": true,
+        "forbidden_mutations": [
+          "T5*",
+          "T7*",
+          "T9*",
+          "T11*",
+          "C6*",
+          "C8*",
+          "C10*",
+          "C12*"
+        ],
+        "design_rules": [
+          "IBS面所有Thr均不可突变——间距7.4Å精确匹配基面",
+          "Cys残基形成二硫键刚性化β-螺旋支架",
+          "非IBS面可耐受插入以进行功能化",
+          "超活性需要≥4个完整β-螺旋圈(≥48个Thr在IBS面)",
+          "较短构建体(≤3圈)丧失超活性但可能保留中等TH"
+        ],
+        "pdb_id": "1EZG"
+      },
+      {
+        "motif_id": "IBS-INSECT-sbwAFP",
+        "name": "Spruce budworm β-helical (left-handed) AFP motif",
+        "afp_type": "Insect hyperactive (β-helical)",
+        "source_organism": "Choristoneura fumiferana (spruce budworm)",
+        "match_score": 5,
+        "ibs_residues": [
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T",
+          "T"
+        ],
+        "ibs_positions": [
+          1,
+          8,
+          15,
+          22,
+          29,
+          36,
+          43,
+          50,
+          57,
+          64,
+          71,
+          78,
+          85,
+          92,
+          99
+        ],
+        "target_ice_plane": "Basal plane {0001}",
+        "th_activity": 4.5,
+        "iri_activity": 1.0,
+        "hyperactivity": true,
+        "forbidden_mutations": [
+          "IBS面Thr*",
+          "二硫键Cys*"
+        ],
+        "design_rules": [
+          "左旋β-螺旋的TXT基序间距7.4Å",
+          "二硫键对结构完整性至关重要"
+        ],
+        "pdb_id": "1M8N"
+      },
+      {
+        "motif_id": "IBS-TYPE2-Ca",
+        "name": "Type II Ca²⁺-dependent ice-binding motif",
+        "afp_type": "Type II (C-type lectin, fish)",
+        "source_organism": "Clupea harengus (herring)",
+        "match_score": 3,
+        "ibs_residues": [
+          "D94",
+          "T96",
+          "T97",
+          "L98",
+          "T99",
+          "E100"
+        ],
+        "ibs_positions": [
+          94,
+          96,
+          97,
+          98,
+          99,
+          100
+        ],
+        "target_ice_plane": "Prism plane {10-10}",
+        "th_activity": 0.5,
+        "iri_activity": 5.0,
+        "hyperactivity": false,
+        "forbidden_mutations": [
+          "T96*",
+          "T98*",
+          "C* (5对二硫键)"
+        ],
+        "design_rules": [
+          "T96, T98 不可突变（丧失活性）",
+          "Ca²⁺配位残基(Q92, D94, E99, N113, D114)必须保留",
+          "5对二硫键(Cys模式)不可破坏",
+          "非IBS环区可插入表位或功能标签"
+        ],
+        "pdb_id": "2AFP"
+      }
+    ],
+    "predicted_ibs": {
+      "positions": [
+        2,
+        13,
+        24,
+        35
+      ],
+      "residues": [
+        "T2",
+        "T13",
+        "T24",
+        "T35"
+      ],
+      "target_ice_plane": "Pyramidal plane {20-21}"
+    },
+    "physicochemical_summary": {
+      "thr_content": 0.108,
+      "ala_content": 0.622,
+      "cys_content": 0.0,
+      "net_charge": -1,
+      "gravy": 0.527,
+      "isoelectric_point": 4.2,
+      "instability_index": 39.44
+    },
+    "forbidden_positions": [
+      1,
+      2,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      18,
+      23,
+      24,
+      34,
+      35
+    ],
+    "mutation_hotspots": [
+      {
+        "position": 3,
+        "current_aa": "A",
+        "mutation_potential": 0.7,
+        "suggestion": "Ala→Ser可提高溶解度",
+        "is_surface": true
+      },
+      {
+        "position": 6,
+        "current_aa": "A",
+        "mutation_potential": 0.7,
+        "suggestion": "Ala→Ser可提高溶解度",
+        "is_surface": true
+      },
+      {
+        "position": 7,
+        "current_aa": "A",
+        "mutation_potential": 0.7,
+        "suggestion": "Ala→Ser可提高溶解度",
+        "is_surface": true
+      },
+      {
+        "position": 8,
+        "current_aa": "A",
+        "mutation_potential": 0.7,
+        "suggestion": "Ala→Ser可提高溶解度",
+        "is_surface": true
+      },
+      {
+        "position": 9,
+        "current_aa": "A",
+        "mutation_potential": 0.7,
+        "suggestion": "Ala→Ser可提高溶解度",
+        "is_surface": true
+      },
+      {
+        "position": 10,
+        "current_aa": "A",
+        "mutation_potential": 0.7,
+        "suggestion": "Ala→Ser可提高溶解度",
+        "is_surface": true
+      },
+      {
+        "position": 11,
+        "current_aa": "A",
+        "mutation_potential": 0.7,
+        "suggestion": "Ala→Ser可提高溶解度",
+        "is_surface": true
+      },
+      {
+        "position": 14,
+        "current_aa": "A",
+        "mutation_potential": 0.7,
+        "suggestion": "Ala→Ser可提高溶解度",
+        "is_surface": true
+      },
+      {
+        "position": 15,
+        "current_aa": "A",
+        "mutation_potential": 0.7,
+        "suggestion": "Ala→Ser可提高溶解度",
+        "is_surface": true
+      },
+      {
+        "position": 17,
+        "current_aa": "A",
+        "mutation_potential": 0.7,
+        "suggestion": "Ala→Ser可提高溶解度",
+        "is_surface": true
+      }
+    ],
+    "design_potential_score": 0.889,
+    "activity_prediction": {
+      "estimated_th_C": 0.16,
+      "estimated_iri_IC50_uM": 1.82,
+      "expression_score": 0.452,
+      "stability_score": 0.606
+    },
+    "relevant_design_principles": [
+      {
+        "title": "IBS Thr间距必须匹配靶向冰面",
+        "rule": "Thr残基在IBS上的间距必须为4.5Å（棱面）、7.4Å（基面）或16.5Å（金字塔面），偏差>10%将显著降低活性",
+        "evidence": "Strong (experimental)"
+      },
+      {
+        "title": "IBS必须保持平坦（RMSD < 1 Å）",
+        "rule": "冰结合面的Cα原子波动不应超过1Å。引入大体积残基(Phe/Trp/Tyr)或带电残基(Lys/Arg/Asp/Glu)到IBS将破坏平面性并丧失活性",
+        "evidence": "Strong (experimental)"
+      },
+      {
+        "title": "几何互补性可独立驱动显著的IRI活性",
+        "rule": "即使没有完美的氢键匹配，仅凭IBS与冰面的几何形状互补就足以产生可测量的IRI活性。这对de novo设计尤其重要",
+        "evidence": "Moderate (MD + experiment)"
+      },
+      {
+        "title": "融合标签可显著改善AFP表达量",
+        "rule": "MBP和GST标签可将AFP表达量提高2-10倍。TAT细胞穿透肽融合可实现细胞内冰保护。标签必须放置在非IBS端以避免干扰冰结合",
+        "evidence": "Strong (experimental)"
+      },
+      {
+        "title": "IBS残基类型影响冰结合强度",
+        "rule": "冰结合残基优先级：Glu(E) > Thr(T) > Asn(N) > Gln(Q) > Ser(S) > Ala(A) > Gly(G)。带电残基(D/K/R)应严格避免在IBS上出现",
+        "evidence": "Moderate (multiple experimental studies)"
+      },
+      {
+        "title": "盐桥对α-螺旋型AFP的折叠至关重要",
+        "rule": "Type I AFP中的Lys-Asp/Glu盐桥提供了α-螺旋的帽化稳定。突变这些盐桥残基将降低Tm并间接损害TH活性",
+        "evidence": "Strong (experimental)"
+      },
+      {
+        "title": "非IBS面残基对活性影响极小",
+        "rule": "de novo iTHR实验证明——非IBS面的Ala→Glu敲除仅降低IRI约3倍而非完全丧失。非IBS面可用于优化表达量/溶解度/稳定性而不影响冰结合",
+        "evidence": "Moderate (MD + experiment, 2025)"
+      },
+      {
+        "title": "Ala含量与α-螺旋AFP表达正相关",
+        "rule": "Type I AFP中Ala含量>50%有助于α-螺旋稳定性和表达产量。在保持IBS Thr的前提下，可适度增加Ala含量以改善表达",
+        "evidence": "Moderate (sequence analysis)"
+      }
+    ],
+    "relevant_mutations": [
+      {
+        "protein": "MaIBP_RIV (Marinomonas)",
+        "mutation": "G63S",
+        "th_change": "+40.0%",
+        "iri_change": "+15.0%",
+        "mechanism": "Ser羟基恢复局部H-bond网络，增强冰结合"
+      },
+      {
+        "protein": "MaIBP_RIV (Marinomonas)",
+        "mutation": "G63D",
+        "th_change": "-100.0%",
+        "iri_change": "-100.0%",
+        "mechanism": "Asp负电荷排斥冰面，完全丧失冰结合"
+      },
+      {
+        "protein": "MaIBP_RIV (Marinomonas)",
+        "mutation": "G63E",
+        "th_change": "-95.0%",
+        "iri_change": "-90.0%",
+        "mechanism": "Glu负电荷排斥冰面"
+      },
+      {
+        "protein": "MaIBP_RIV (Marinomonas)",
+        "mutation": "G63K",
+        "th_change": "-90.0%",
+        "iri_change": "-85.0%",
+        "mechanism": "Lys正电荷+大体积破坏IBS"
+      },
+      {
+        "protein": "雪蚤 AFP (sfAFP)",
+        "mutation": "T16G/A19G/S22G",
+        "th_change": "+128.0%",
+        "iri_change": "+20.0%",
+        "mechanism": "三重Gly突变优化二聚化冰结合面"
+      },
+      {
+        "protein": "Type III QAE",
+        "mutation": "Q44T/N14S/T18N",
+        "th_change": "-100.0%",
+        "iri_change": "-100.0%",
+        "mechanism": "三重突变破坏冰结合面氢键网络——即使保持天然折叠"
+      },
+      {
+        "protein": "Type III QAE",
+        "mutation": "A16L",
+        "th_change": "-30.0%",
+        "iri_change": "-25.0%",
+        "mechanism": "Leu大体积侧链破坏IBS平坦性"
+      },
+      {
+        "protein": "Type I HPLC6",
+        "mutation": "T2S",
+        "th_change": "-80.0%",
+        "iri_change": "-10.0%",
+        "mechanism": "Ser羟基间距不匹配(4.5→4.0Å)，破坏冰晶格匹配"
+      }
+    ]
+  }
+}
