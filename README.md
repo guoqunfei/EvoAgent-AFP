@@ -81,8 +81,8 @@ frontend/
 #### 1. 克隆仓库
 
 ```bash
-git clone https://github.com/guoqunfei/test.git
-cd test
+git clone https://github.com/guoqunfei/EvoAgent-AFP.git
+cd EvoAgent-AFP
 ```
 
 #### 2. 后端环境配置
@@ -312,8 +312,8 @@ A: 本项目需要Python 3.13+,请使用Homebrew安装: `brew install python@3.1
 
 ## 📧 联系方式
 
-- **项目主页**: https://github.com/guoqunfei/test
-- **问题反馈**: https://github.com/guoqunfei/test/issues
+- **项目主页**: https://github.com/guoqunfei/EvoAgent-AFP
+- **问题反馈**: https://github.com/guoqunfei/EvoAgent-AFP/issues
 
 ---
 
