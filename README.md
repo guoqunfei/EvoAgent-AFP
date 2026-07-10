@@ -153,6 +153,57 @@ npm run dev
 
 ---
 
+## 🌐 内网穿透访问 (Ngrok)
+
+### 快速启动 Ngrok
+
+**方式一: 使用启动脚本(推荐)**
+```bash
+./start_ngrok.sh
+```
+
+**方式二: 直接命令**
+```bash
+# 暴露后端API
+ngrok http 8000
+
+# 暴露前端界面
+ngrok http 5173
+```
+
+### 首次使用配置
+
+1. **注册账号**: 访问 [https://dashboard.ngrok.com/signup](https://dashboard.ngrok.com/signup)
+2. **获取Authtoken**: 登录后在 [Dashboard](https://dashboard.ngrok.com/get-started/your-authtoken) 复制token
+3. **配置Token**:
+   ```bash
+   ngrok config add-authtoken <YOUR_AUTHTOKEN>
+   ```
+
+### 访问地址
+
+启动后,ngrok会显示类似以下的URL:
+```
+Forwarding    https://abc123xyz.ngrok-free.app -> http://localhost:8000
+```
+
+- **公开访问URL**: `https://abc123xyz.ngrok-free.app`
+- **请求监控**: http://localhost:4040 (查看实时请求日志)
+
+### 注意事项
+
+️ **CORS已自动配置**: 后端已允许所有来源访问,无需额外配置
+
+⚠️ **前端API地址**: 如需从外网访问,需修改前端环境变量:
+```typescript
+// frontend/.env.local
+VITE_API_BASE_URL=https://你的ngrok域名.ngrok-free.app/api/v1
+```
+
+📖 **详细文档**: 查看 [NGROK_SETUP.md](NGROK_SETUP.md)
+
+---
+
 ## 📡 API接口说明
 
 ### 主要端点
